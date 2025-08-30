@@ -10,7 +10,7 @@
     let bookingsCache = [];
 
     async function loadBookings() {
-        const response = await fetch('https://skripsi-kang-n8n.hgsuzl.easypanel.host/webhook/get-booking');
+        const response = await fetch('https://skripsi-n8n.30wr0r.easypanel.host/webhook/get-booking');
         const data = await response.json();
         bookingsCache = data;
         const tbody = document.getElementById('booking-body');
@@ -69,7 +69,7 @@
 
         try {
             const response = await fetch(
-                'https://skripsi-kang-n8n.hgsuzl.easypanel.host/webhook/konfirmasi-booking', {
+                'https://skripsi-n8n.30wr0r.easypanel.host/webhook/konfirmasi-booking', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -135,7 +135,7 @@
 
             try {
                 const response = await fetch(
-                    'https://skripsi-kang-n8n.hgsuzl.easypanel.host/webhook/edit-booking', {
+                    'https://skripsi-n8n.30wr0r.easypanel.host/webhook/edit-booking', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
